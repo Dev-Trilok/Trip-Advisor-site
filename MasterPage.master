@@ -1,0 +1,133 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Shivaay Trip Planner</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="Stylesheet" type="text/css" href="style/StyleSheet.css" />
+  
+   </head>
+<body>
+    <form id="form1" runat="server">
+    <div class="trilok">
+    <div class="lalu">
+    <nav>
+    <h1>Shivaay Holidays</h1>
+    <ul id="nav">
+    <li ><a class="red" href="home.aspx">Home</a></li>
+    <li ><a class="blue" href="about.aspx">About us</a></li>
+    <li ><a class="blue" href="services.aspx">Services</a></li>
+    <li ><a class="blue" href="Domestic tour.aspx">Domestic Tour</a></li>
+    <li ><a class="blue" href="default3.aspx">Enquiry</a></li>
+    <li ><a class="blue" href="pay.aspx">Pay Online</a></li>
+    <li ><a class="blue" href="fair.aspx">Fair & festivies</a></li>
+    <li ><a class="blue" href="contact us.aspx">contact Us </a></li>
+    </ul>
+    </nav>
+    </div>
+    <div class="redline" ></div>
+    </div>
+
+
+    <div class="main">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+
+    <div class="info2">
+    <div id="info-wrapper">
+      <section class="block1">
+       <h3 style="font-family: Arial, Helvetica, sans-serif"> We Accept</h3> <br> <img src="images/payment-method.png"> 
+      </section>
+      
+      <section class="block2">
+      <h3 style="font-family: Arial, Helvetica, sans-serif">  Booking Number</h3> <br> <h1>9960-65-4964</h1>
+      </section> 
+      
+      <section class="block3">
+      <h3 style="font-family: Arial, Helvetica, sans-serif">  Mail Us </h3><br> <h1><a href="mailto:shivaayholidays@gmail.com" style=" text-decoration:none;">shivaayholidays@gmail.com</a></h1>
+      </section>  
+      <section class="block4">
+        <h3 style="font-family: Arial, Helvetica, sans-serif"> Follow Us</h3> <br> 
+      
+        <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/images/fb.png" 
+            Height="40px"/>
+        <asp:ImageButton ID="ImageButton2" runat="server" ImageUrl="~/images/in.png" Height="40px"/>
+        <asp:ImageButton ID="ImageButton3" runat="server" ImageUrl="~/images/tw.png" Height="40px"/>
+        <asp:ImageButton ID="ImageButton4" runat="server" ImageUrl="~/images/gplus.png" Height="40px"/>
+            </section>
+       </div>
+    <div class="1">
+      
+      <div class="2">          
+      <table cellspacing="0" cellpadding="0" id="footer-table" align="center" 
+              width="1100px" 
+              
+              style="background-image: url('/Touriest/images/Travel-Agency.jpg'); background-repeat: repeat; background-attachment: inherit" 
+              frame="box">
+        <tbody><tr>
+          <td  style=" border:1px solid black;">
+           <div id="footer-box" style="border-style: 1px solid black;">
+             <h4>Navigation Links</h4>
+             <p >
+              <a href="home.aspx">› Home</a><br>
+              <a href="about.aspx">› Company Profile</a><br>
+              <a href="default3.aspx">› Tour Inquiry</a><br>
+              <a href="prvacy.aspx">› Privacy Policy</a><br>
+              <a href="career.aspx">› Careers</a><br>              
+              <a href="contact us.aspx">› Contact Us</a><br>
+              <a href="condition.aspx">› Terms &amp; Conditions</a><br>
+              <a href="pay.aspx">› Pay Online</a>        
+             </p>
+           </div>
+          </td>
+          
+          <td class="fgap" ></td>
+          
+          <td  style=" border:1px solid black;">
+           <div id="footer-box" >
+             <h4>Our Services</h4>
+             <p>
+             <a href="services.aspx">› Tour Operator</a><br>
+             <a href="services.aspx">› Air Ticket Booking</a> <br>
+             <a href="services.aspx">› Hotel Booking</a><br>
+             <a href="services.aspx">› Rail Ticketing</a><br>
+             <a href="services.aspx">› Car Rental</a> <br>
+              <a href="services.aspx">› Tour Guide</a>
+             </p>
+           </div>
+          </td>
+          
+          <td class="fgap"></td>
+          
+          <td  style=" border:1px solid black;">
+           <div id="footer-box">
+             <h4>Domestic Tour Packages</h4>
+             <p>
+             <a href="Domestic tour.aspx" >› Uttarakhand Tour Packages</a><br>
+             <a href="Domestic tour.aspx">› Himachal Tour Packages</a><br>
+             <a href="Domestic tour.aspx">› Andaman Tour Packages</a><br>
+             <a href="Domestic tour.aspx">› Goa Tour Packages</a><br>
+             <a href="Domestic tour.aspx">› Corbett Tour Packages</a><br>
+             <a href="Domestic tour.aspx">› Kerala Tour Packages</a><br>
+             </p>
+           </div>
+          </td>
+              </tr>
+      </tbody></table>
+    </div>
+    </div>
+    </div>
+
+
+   
+    <div class="footer">
+    <h5>Copyrights Shivaay Holidays All Rights Reserved @ 2018 BCA-III</h5>
+    
+    </div>
+    </form>
+</body>
+</html>
